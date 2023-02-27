@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Delivery</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body id="body" onclick="_overflow">
+	<div class="container">
+		<header class="header">
+			<a href="#" class="header__logo">
+				<img src="./img/icons/logo.svg" alt="Logo">
+			</a>
+			<div class="header__burger">
+				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+					menu
+				</span>
+			</div>
+			<nav id="nav" class="header-nav">
+				<ul class="header-nav__ul">
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Home</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">About</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Pricing</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Pages</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Pricing</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Contact</a>
+					</li>
+				</ul>
+				<span id="icon-close" onclick="navToggle()" class="material-icons">
+					close
+				</span>
+			</nav>
+		</header>
+		<script src="script.js"></script>
+</body>
+
+</html>

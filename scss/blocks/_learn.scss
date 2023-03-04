@@ -1,0 +1,49 @@
+.learn {
+    margin: 200px auto;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        @include tablet {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    &__info {
+        max-width: 597px;
+    }
+    &__desc {
+        @include text($font, 400, 12px, 30px, $color-text-secondary);
+        margin: 16px 0 32px 0;
+    }
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 274px));
+        gap: 48px;
+    }
+
+    &__item {
+    }
+
+    &__icon {
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        @include text($font, 400, 22px, 28px, $color-text-primary);
+        margin-bottom: 14px;
+    }
+
+    &__subdesc {
+        @include text($font, 400, 14px, 30px, $color-text-secondary);
+    }
+
+    &__image {
+        margin-bottom: 60px;
+    }
+    &__btns {
+        text-align: center;
+    }
+}

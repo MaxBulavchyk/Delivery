@@ -1,42 +1,105 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: $font;
-  color: $color-body;
+    font-family: $font;
+    color: $color-body;
 }
 html,
 body {
-  &._overflow {
-    overflow: hidden;
-  }
+    &._overflow {
+        overflow: hidden;
+    }
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 a {
-  color: $color-white;
-  text-decoration: none;
+    color: $color-white;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
 }
 li {
-  list-style: none;
+    list-style: none;
+}
+hr {
+    border-bottom: 1px solid $color-hr;
 }
 .container {
-  max-width: 1480px;
-  padding: 0 20px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1480px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
 }
 .wrapper {
-  max-width: 1270px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
 }
 img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.btn-primary {
+    padding: 25px 40px;
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 16px;
+    display: inline-block;
+    cursor: pointer;
+    transition: $transition;
+    // &:hover {
+    //     outline: 1px solid $color-primary;
+    //     background: none;
+    // }
+}
+
+.btn-secondary {
+    padding: 25px 40px;
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 16px;
+    box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+    display: inline-block;
+    cursor: pointer;
+    transition: $transition;
+    // &:hover {
+    //     outline: 1px solid $color-primary;
+    //     background: none;
+    // }
+}
+
+.btn {
+  padding: 20px 25px;
+}
+
+.link-prymary {
+    @include text($font, 700, 18px, 20px, $color-white);
+}
+
+.link-secondary {
+    @include text($font, 400, 18px, 20px, $color-text-primary);
+}
+
+.subtitle {
+  @include text($font, 400, 18px, 20px, $color-primary);
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+.title {
+    @include text($font, 700, 44px, 54px, $color-text-primary);
 }

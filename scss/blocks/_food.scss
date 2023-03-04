@@ -1,0 +1,57 @@
+.food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+    @include tablet {
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__image{
+        
+    }
+
+    &__info {
+       max-width: 586px;
+    }
+
+    &__title {
+        @include text($font, 700, 62px, 72px, $color-text-primary);
+        max-width: 515px;
+        margin: 28px 0 16px 0;
+    }
+
+    &__desc {
+        @include text($font, 400, 16px, 30px, $color-text-secondary);
+        margin-bottom: 33px;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 27px;
+        margin-bottom: 60px;
+    }
+
+    &__showing {
+        margin-top: 60px;
+    }
+}
+
+.showing {
+    display: flex;
+    gap: 35px;
+    &__block {
+        text-align: center;
+    }
+
+    &__title {
+        @include text($font, 700, 56px, 66px, $color-text-primary);
+        span {
+            color:$color-primary;
+        }
+    }
+
+    &__desc {
+        @include text($font, 400, 18px, 20px, $color-text-secondary);
+    }
+}

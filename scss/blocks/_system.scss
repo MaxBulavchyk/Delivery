@@ -1,0 +1,67 @@
+.system {
+    margin-bottom: 200px;
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__title {
+        max-width: 520px;
+        text-align: center;
+        margin: 0 auto 22px auto;
+    }
+
+    &__desc {
+        @include text($font, 400, 12px, 30px, $color-text-secondary);
+        text-align: center;
+        margin-bottom: 100px;
+        @include tablet-small {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 350px));
+        align-items: flex-start;
+        gap: 86px;
+        margin-bottom: 60px;
+        @include tablet {
+            gap: 30px;
+        }
+        @include tablet-small {
+        grid-template-columns: repeat(1, minmax(100px, 350px));
+        justify-content: center;
+        }
+    }
+
+    &__item {
+
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 27px;
+    }
+}
+.subtitle {
+}
+.title {
+}
+.item {
+    text-align: center;
+
+    &__image {
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        @include text($font, 400, 28px, 40px, $color-text-primary);
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        @include text($font, 400, 18px, 30px, $color-text-secondary);
+    }
+}
+

@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    align-items: center;
+    background: $color-text-primary;
+    margin-bottom: 200px;
+    &__info {
+    }
+
+    &__title {
+        @include text($font, 700, 56px, 66px, $color-white);
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        margin-bottom: 27px;
+    }
+
+    &__images {
+        display: flex;
+        gap: 30px;
+    }
+}
+

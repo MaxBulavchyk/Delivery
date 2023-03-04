@@ -1,0 +1,14 @@
+.restaurant {
+
+    &__title {
+        @include text($font, 400, 20px, 22px, $color-text-secondary);
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+}

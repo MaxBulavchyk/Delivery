@@ -15,7 +15,7 @@
 
 <body id="body" onclick="_overflow">
 	<div class="container">
-		<header class="header">
+		<header class="header wrapper">
 			<a href="#" class="header__logo">
 				<img src="./img/icons/logo.svg" alt="Logo">
 			</a>
@@ -39,10 +39,17 @@
 						<a href="#" class="header-nav__a _active" onclick="navClose()">Pages</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a _active" onclick="navClose()">Pricing</a>
+						<a href="#" class="header-nav__a _active" onclick="navClose()">Cart</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a _active" onclick="navClose()">Contact</a>
+						<div class="btn-secondary btn">
+							<a href="#" class="link-secondary _active" onclick="navClose()">Download app</a>
+						</div>
+					</li>
+					<li class="header-nav__li">
+						<div class="btn-primary btn">
+							<a href="#" class="link-primary _active" onclick="navClose()">Register</a>
+						</div>
 					</li>
 				</ul>
 				<span id="icon-close" onclick="navToggle()" class="material-icons">
@@ -50,6 +57,168 @@
 				</span>
 			</nav>
 		</header>
+
+		<section class="food wrapper">
+			<div class="food__info">
+				<p class="subtitle">Food Delivery Service</p>
+				<h1 class="food__title">Delicious food at your fingertips</h1>
+				<p class="food__desc">A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas
+					hendrerit et maecenas habitant mattis in facili</p>
+				<div class="food__btns">
+					<div class="btn-primary">
+						<a href="#" class="link-primary">Register restaurant</a>
+					</div>
+					<div class="btn-secondary">
+						<a href="#" class="link-secondary">Download app</a>
+					</div>
+				</div>
+				<hr>
+				<div class="food__showing showing">
+					<div class="showing__block">
+						<p class="showing__title">10M<span>+</span></p>
+						<p class="showing__desc">Happy customers</p>
+					</div>
+					<div class="showing__block">
+						<p class="showing__title">500k<span>+</span></p>
+						<p class="showing__desc">Restaurants available</p>
+					</div>
+					<div class="showing__block">
+						<p class="showing__title">30M<span>+</span></p>
+						<p class="showing__desc">Successful deliveries</p>
+					</div>
+				</div>
+			</div>
+			<div class="food__image">
+				<img src="./img/background1.jpg" alt="image">
+			</div>
+		</section>
+
+		<section class="restaurant wrapper">
+			<p class="restaurant__title">Trusted by 5,000+ restaurants aroundthe world</p>
+			<div class="restaurant__images">
+				<div class="restaurant__image">
+					<img src="./img/restaurant1.png" alt="icon">
+				</div>
+				<div class="restaurant__image">
+					<img src="./img/restaurant2.png" alt="icon">
+				</div>
+				<div class="restaurant__image">
+					<img src="./img/restaurant3.png" alt="icon">
+				</div>
+				<div class="restaurant__image">
+					<img src="./img/restaurant4.png" alt="icon">
+				</div>
+			</div>
+		</section>
+
+		<section class="system wrapper">
+			<p class="system__subtitle subtitle">How it works</p>
+			<h2 class="system__title title">Our simple, yet efficient delivery system</h2>
+			<p class="system__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quibusdam.</p>
+			<div class="system__content">
+				<div class="system__item item">
+					<div class="item__image">
+						<img src="./img/mobile.png" alt="image">
+					</div>
+					<p class="item__title">1. Create a free account at Deliver X today</p>
+					<p class="item__desc">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus
+						mollis sit aliquam sit nullam.</p>
+				</div>
+				<div class="system__item item">
+					<div class="item__image">
+						<img src="./img/shop.png" alt="image">
+					</div>
+					<p class="item__title">2. Order from your favorite restaurant</p>
+					<p class="item__desc">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus
+						mollis sit aliquam sit nullam.</p>
+				</div>
+				<div class="system__item item">
+					<div class="item__image">
+						<img src="./img/moto.png" alt="image">
+					</div>
+					<p class="item__title">3. Receive right in your house, hassle-free</p>
+					<p class="item__desc">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus
+						mollis sit aliquam sit nullam.</p>
+				</div>
+			</div>
+			<div class="system__btns">
+				<div class="btn-primary">
+					<a href="#" class="link-primary">Register restaurant</a>
+				</div>
+				<div class="btn-secondary">
+					<a href="#" class="link-secondary">Download app</a>
+				</div>
+			</div>
+		</section>
+
+		<hr>
+
+		<section class="learn wrapper">
+			<div class="learn__content">
+				<div class="learn__info">
+					<h2 class="title">Learn why Deliver X is great for
+						your restaurant</h2>
+					<p class="learn__desc">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis
+						sit aliquam sit nullam</p>
+					<div class="learn__block">
+						<div class="learn__item">
+							<div class="learn__icon">
+								<img src="./img/flash.png" alt="icon">
+							</div>
+							<p class="learn__subtitle">Fast deliveries</p>
+							<p class="learn__subdesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+						<div class="learn__item">
+							<div class="learn__icon">
+								<img src="./img/man.png" alt="icon">
+							</div>
+							<p class="learn__subtitle">Fast deliveries</p>
+							<p class="learn__subdesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+						<div class="learn__item">
+							<div class="learn__icon">
+								<img src="./img/dollar.png" alt="icon">
+							</div>
+							<p class="learn__subtitle">Fast deliveries</p>
+							<p class="learn__subdesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+						<div class="learn__item">
+							<div class="learn__icon">
+								<img src="./img/portmone.png" alt="icon">
+							</div>
+							<p class="learn__subtitle">Fast deliveries</p>
+							<p class="learn__subdesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="learn__image">
+					<img src="./img/background2.jpg" alt="image">
+				</div>
+			</div>
+			<div class="learn__btns">
+				<div class="btn-primary">
+					<a href="#" class="link-primary">Register restaurant</a>
+				</div>
+				<div class="btn-secondary">
+					<a href="#" class="link-secondary">Download app</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu wrapper">
+			<div class="menu__info">
+				<h2 class="menu__title">A delicious burger is one tap away!</h2>
+				<p class="menu__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, facilis?</p>
+				<div class="btn-primary">
+					<a href="#" class="link-primary">Download app</a>
+				</div>
+			</div>
+			<div class="menu__images">
+				<img src="./img/background3.jpg" alt="img">
+				<img src="./img/background4.jpg" alt="img">
+			</div>
+		</section>
+
 		<script src="script.js"></script>
 </body>
 

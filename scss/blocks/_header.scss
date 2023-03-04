@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 0;
+    padding: 36px 20px 36px 0;
     &__logo {
         @include text($font, 700, 28px, 33px, $color-body);
     }
     &__burger {
         display: none;
-        @include desktop-small {
+        @include tablet {
             display: block;
         }
     }
@@ -17,10 +17,10 @@
     .material-icons {
         color: $color-white;
         display: none;
-        @include desktop-small {
+        @include tablet {
             display: block;
             position: absolute;
-            top: 40px;
+            top: 45px;
             right: 20px;
         }
     }
@@ -28,22 +28,20 @@
         padding: 0;
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 25px;
     }
 
     &__a {
-        @include text($font, 400, 16px, 19px, $color-body);
+        @include text($font, 400, 16px, 18px, $color-text-primary);
         transition: $transition;
-        @include desktop-small {
+        @include tablet {
             color: $color-white;
         }
-
-        &._active,
         &:hover {
             color: $color-primary;
         }
     }
-    @include desktop-small {
+    @include tablet {
         position: fixed;
         z-index: 9;
         width: 100%;
@@ -57,10 +55,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 40px;
             height: 100%;
         }
         .header-nav__a {
-            font-size: 18px;
+            font-size: 32px;
         }
     }
     &._active {
